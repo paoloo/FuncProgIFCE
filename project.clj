@@ -9,6 +9,7 @@
                  [ring/ring-json "0.1.2"]
                  [cheshire "4.0.3"]]
   :plugins [[lein-ring "0.9.7"]]
+  :java-source-paths ["src/paolo/demo"]
   :ring {:handler funcprogifce.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]

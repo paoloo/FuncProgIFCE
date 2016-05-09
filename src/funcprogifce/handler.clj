@@ -7,6 +7,8 @@
 
 (defroutes app-routes
   (GET "/" [] {:body {:text "Hello World"}})
+  (GET "/metodo/:palavra" [palavra] {:body {:text palavra, :primeiraLetra (str "" (paolo.demo.Foo/primeiro palavra))}})
+  (GET "/variavel" [] {:body {:info paolo.demo.Foo/texto}})
   (route/not-found "Not Found"))
 
 (def app
