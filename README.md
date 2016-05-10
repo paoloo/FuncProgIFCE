@@ -51,7 +51,7 @@ Material referente a programação funcional, para apoio a disciplina de paradig
  {:body {:parametroA valorA, ..., :parametroZ valorZ }}
  ```
  - para usar em outro arquivo, adicionar apenas, no `:require`, `[clojure.data.json :as json]`. 
- - Já para fazer uma requisição http, adicionar no `:require` a lib `[clj-http.client :as client]` e utilizar como `(client/get URL)`.
+ - Já para fazer uma requisição http, adicionar no project.clj, no `:require`, `[clj-http "2.0.0"]` e, no arquivo que for ser usada, adicionar `:require` a lib `[clj-http.client :as client]` e utilizar como `(client/get URL)`.
 - adicionar uma classe java com um metodo e variavel chamados por API, conforme aqui: [#18c4a73](https://github.com/paoloo/FuncProgIFCE/commit/18c4a739dd89530cc69dac4b4b079d0222131142)
  - adicionar ao [project.clj](project.clj) o conteudo `:java-source-paths ["src/namespace/java"]`;
  - adicionar os arquivos .java em `src/namespace/java/`;
