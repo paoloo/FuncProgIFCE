@@ -15,12 +15,7 @@
       {:body {
             :cidade (get _corpo :name),
             :presao (get-in _corpo [:main :pressure]),
-            :velocidadeVento (get-in _corpo [:wind :speed]),
-           }
-      }
-    )
-  )
-)
+            :velocidadeVento (get-in _corpo [:wind :speed])}})))
 
 (defroutes app-routes
   (GET "/" [] {:body {:text "Hello World"}})
