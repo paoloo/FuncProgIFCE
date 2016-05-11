@@ -8,7 +8,7 @@
                  [clj-http "2.0.0"]
                  [ring/ring-defaults "0.1.5"]
                  [ring/ring-json "0.1.2"]
-                 [cheshire "4.0.3"]]
+                 [cheshire "5.5.0"]]
   :plugins [[lein-ring "0.9.7"]]
   :java-source-paths ["src/paolo/demo"]
   :ring {:handler funcprogifce.handler/app}
